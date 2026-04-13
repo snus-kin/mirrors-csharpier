@@ -6,6 +6,7 @@ please note you cannot use this hook with pre-commit as it does not support dotn
 example config:
 ```yaml
   - repo: https://github.com/snus-kin/mirrors-csharpier
+    rev: v1.2.6
     hooks:
       - id: csharpier
         name: CSharpier
