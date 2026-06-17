@@ -38,6 +38,7 @@ jobs:
           dotnet-pre-commit-mirror . \
             --language dotnet \
             --package-name csharpier \
+            --id csharpier \
             --entry 'csharpier format' \
             --files-regex '\.cs$'
 
