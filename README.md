@@ -2,13 +2,13 @@
 
 > **Note:** this hook requires `additional_dependencies` which pre-commit does not support for dotnet — use [prek](https://github.com/j178/prek) instead.
 
-Current version: **1.2.6**
+Current version: **1.3.0**
 
 ## Usage
 
 ```yaml
   - repo: https://github.com/snus-kin/mirrors-csharpier
-    rev: v1.2.6
+    rev: v1.3.0
     hooks:
       - id: csharpier
         name: CSharpier
