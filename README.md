@@ -1,9 +1,11 @@
 # [prek](https://github.com/j178/prek) hook for csharpier
 
-please note you cannot use this hook with pre-commit as it does not support dotnet additional-deps
+> **Note:** this hook requires `additional_dependencies` which pre-commit does not support for dotnet — use [prek](https://github.com/j178/prek) instead.
 
+Current version: **1.2.6**
 
-example config:
+## Usage
+
 ```yaml
   - repo: https://github.com/snus-kin/mirrors-csharpier
     rev: v1.2.6
@@ -11,3 +13,7 @@ example config:
       - id: csharpier
         name: CSharpier
 ```
+
+## How it works
+
+A daily GitHub Actions workflow checks NuGet for new stable CSharpier releases. When a new version is found, it commits updated hook files and a new `v{version}` tag — so pinning to a tag always gives you an exact, reproducible install.
